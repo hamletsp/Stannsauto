@@ -1,0 +1,93 @@
+
+ body {
+        text-align: center;
+        background-color: white;
+        margin:0 ;
+        padding: 10px;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+textarea{width: 60%; height: 200px; outline: none; -webkit-transition: 0.5s; transition: 0.5s; border: 3px solid white;
+    margin-top: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+    }
+input[type=text]{width: 60%; outline: none; -webkit-transition: 0.5s; transition: 0.5s; border: 3px solid white;}
+textarea:focus{border: 3px solid white}
+input[type=text]:focus {border: 3px solid #555;}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+ul.nav li {float: left;}
+ul.nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+
+}
+ul.nav li a:hover:not(.active) {background-color: white;border: 1px solid #577ED9;}
+ul.nav li a.active {background-color: #577ED9;}
+ul.nav li.right {float: right;}
+@media screen and (max-width: 600px){
+    ul.nav li.right,
+    ul.nav li {float: none; image-orientation: 90px;}
+}
+img{
+   max-width: 80%;
+    height: auto;
+}
+iframe{max-width: 80%; max-height: 40%;}
+text{ max-width: 100%}
+.top {
+        top:0;
+        width: 600px;
+        height: 100px;
+        margin: 0;
+        padding: 0px;
+        background-color: brown;
+        border-radius: 1em;
+    }
+  a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+ul.serv {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+    height: 100%;
+    width: 100%
+}
+ul.serv li {float: left;}
+ul.serv li a {
+    display:flow-root;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+
+
+}
+ul.serv li a:hover{background-color: red; }
+ul.serv li a.active {background-color: #577ED9;}
+ul.serv li.right {float: right;}
+@media screen and (max-width: 600px){
+    ul.serv li.right,
+    ul.serv li {}
+}
+
