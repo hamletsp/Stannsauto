@@ -1,48 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>St. Anns Auto Repair Inc </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+<link href="carserv.png" rel="icon" type="image/vnd.microsoft.icon">
+<title> St. Ann's</title>
+    
+<style>
+#topborder{
+        height: auto;
+        width: 100%; 
+        color: white;
+        background-color:#0033cc;
+        padding-bottom: 15px;
+        margin-top: 10px; 
+        opacity: .8;
+          }
+    #label{
+        background-color:#0033cc;
+        opacity: .8;
+    }
+#topfont{
+        font-family: arial black; 
+        font-size:1.4em; 
+        text-align: center; 
+        overflow: hidden; 
+    
+        }        
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    
+    
+        text-align: center;
+        background: linear-gradient(to right, #0033cc 0%, #ffffff 100%);
+        margin:0 ;
+        padding: 10px;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      } 
+textarea{
+    width: 60%; height: 200px; outline: none; -webkit-transition: 0.5s; transition: 0.5s; border: 3px solid white;
+    margin-top: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+       }
+    p {
+        font-family: arial white; 
+        color: white;
+        font-size:1.4em; 
+        text-align: center; 
+        overflow: hidden; 
+    }
+input[type=text]{
+    width: 60%; outline: none; -webkit-transition: 0.5s; transition: 0.5s; border: 3px solid white;}
+    textarea:focus{border: 3px solid white}
+    input[type=text]:focus {border: 3px solid #555;
+                }
+/*img{max-width: 80%;height: auto;}*/
+iframe{max-width: 80%; max-height: 40%;}
+text{max-width: 100%}
+ul.serv {
+    list-style-type:none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    
+        }
+ul.serv li {float: left;}
+ul.serv li a {
+    display:flow-root;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+             }
+ul.serv li a:hover{background-color: #0033cc; color: white; }
+ul.serv li a.active {background-color: #577ED9;}
+ul.serv li.right {float: right;}
+@media screen and (max-width: 600px){
+    ul.serv li.right,
+    ul.serv li {}
+}
 
-    <link rel="stylesheet" href="stAnns.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    img.one{border-style: solid;
+            border-color: white;
+            border-width: 6px;
+            opacity: .77;
+            }
+</style>
 </head>
 <body>
-<!-- Top Border-->
+    
+<div class="main" id="topborder"> <p id="topfont">St. Ann's Auto Repair Inc. <br> Phone: ( 718 )  882 - 8686 <br> 24 Hours Towing Service Phone: ( 917 )  416 - 7603</p></div>
 
-    <div style="background: yellow; height: auto;width: 100%; color: #577ED9; padding-bottom: 15px"> <p style="font-family: arial black; font-size: 20px; text-align: center; overflow: hidden">St. Ann's Auto Repair Inc. <br> Phone: ( 718 )  882 - 8686 <br> 24 Hours Towing Service Phone: ( 917 )  416 - 7603</p></div>
-
-<!--Navigation-->
-
-  <ul class="nav">
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Auto Repairs</a></li>
-  <li><a href="#contact">Rentals</a></li>
-  <li><a href="#contact">Service</a></li>
-  <li><a href="#about">Contact Us</a></li>
-</ul>
-<!-- 1st Section   -->
-
-<div style="background-color: mediumpurple; height: auto;padding: 20px">
-
-<!--    paragraph tags helps space and divide the text for styling purposes. can also use "<br>" for a line break-->
-
-<img style="padding: 10px" src="picst.JPG" width="500px" height="300px" p >
-    <p>Welcome to St. Ann's Auto Repairs, the neighborhood favorite location for vehicle service and roadside assistance. Here, we make it top priority to satisfy the needs of every customer and ensure that we do it with our best foot forward <br><br><br> </p>
-
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Pricing</a>
+  <a href="#">Contact</a>
 </div>
-<!-- 2nd Section   -->
 
-<div style="background-color: white;">
+<div class="main">
+<!--
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+-->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+    
+    <div class="main" style=" width: 100%; text-align: center;background: linear-gradient(to right, #0033cc 0%, #ffffff 100%);"> <img class="one" id="pic" style="height: 10%; width: 80%;" src="IMG_1467_.jpg">
+    <p style="padding: 0 20%"><br>Welcome to St. Ann's Auto Repairs, the neighborhood's favorite location for vehicle service and roadside assistance. Here, we make it top priority to satisfy the needs of every customer and ensure that we do it with style. <br><br><br> </p>
+</div>
+
+    
+<div class="main" style="margin-bottom: 10px; margin-top: 10px"> <p style="font-size: 25px;" id="label">Services</p></div>
+    
+    <div class="main" style="width: 100%; background:linear-gradient(to right, #0033cc 0%, #ffffff 100%);; margin-top: " >
 
 <!--    Header tag goes from h1-h4 which varies in size-->
-    <h1>Services</h1>
-    <ul class="serv">
+        
+<!--    <h1>Services</h1>-->
+    <ul class="serv" class="main">
         <li><a><img src="dia.png" height="40px" width="40px" style="padding-right:10px"> Car Diagnostic</a></li>
     <li><a href="#fix"><img src="carservice.png" height="40px" width="40px" style="padding-right:10px">
         Repair</a></li>
@@ -62,48 +210,49 @@
         </ul>
 
 
-<!--
-
-    <div style="background-color: hotpink; height 100%; width: 50%; font-size: 80px; float:left; overflow: auto" >Need Repairs?</div>
-    <div style="background-color: red; height 100%; width: 50%; font-size: 80px; float:left; overflow: auto" >Roadside Assistance?</div>
--->
-
-
 </div>
-<!-- 3rd Section   -->
-
-<div style="background-color: black;">
-
-<!--    Header tag goes from h1-h4 which varies in size-->
-    <h1>St. Ann's Auto Repair Inc. </h1>
-
-<!--    paragraph tags helps space and divide the text for styling purposes. can also use "<br>" for a line break-->
-
-
-    <p>Here at St. Ann's Auto, we</p>
-    <p><a href="http://www.iana.org/domains/example">More information...</a></p>
-</div>
-<!-- 4th Section   -->
-
-<div style="background-color: gainsboro; height: 20%; width: 49%; float: left; text-align: left;padding:15px"> Name:<br> <input type="text" placeholder="Name"><br><br>
-Phone:<br><input type="text" placeholder="Phone Number"><br><br>
-Email:<br><input type="text" placeholder="Email Address"><br><br>
-    Message:<br>
-    <textarea placeholder="Enter Breif Message"></textarea><br>
-    <div style="padding-left: 18%"><button style="margin-top: 2%; float: left;"> Submit</button></div>
-</div>
-
-
-    <div style="background-color: black;color: white; height: auto; width: 49%; float: left;margin-left: 2%;"> <p style="font-size: 34px">Uhaul Rental</p><br>
-    <img src="uhaul.png"></div>
+    
 <!-- Map   -->
-
-    <div style="margin-bottom: 10px; margin-top: 510px"> <p style="font-size: 25px; background-color: ghostwhite;">Location</p></div>
-    <div style="color:black ;height: auto; width: auto; margin-top: 10px"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.5394186763065!2d-73.8326411845898!3d40.88198087931376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28cda98b1c839%3A0x1d38b54353b71535!2sSt+Ann&#39;s+Auto+Repair+Inc!5e0!3m2!1sen!2sus!4v1516925083306" width="600" height="450" frameborder="0" style="border:0" allowfullscreen ></iframe>
+   
+   
+    <div class="main" style="margin-bottom: 10px; margin-top: 10px"> <p style="font-size: 25px;" id="label" >Location</p></div>
+    
+    <div class="main"style="background:linear-gradient(to right, #0033cc 0%, #ffffff 100%) ;height: auto; width: 100%; margin-top: 10px; padding: 2%"> <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.5394186763065!2d-73.8326411845898!3d40.88198087931376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28cda98b1c839%3A0x1d38b54353b71535!2sSt+Ann&#39;s+Auto+Repair+Inc!5e0!3m2!1sen!2sus!4v1516925083306" width="600" height="450" frameborder="0" style="border:0" allowfullscreen ></iframe>
         </div>
 <!-- Footer   -->
 
-     <div style="background-color: black; height: 40px; width: 100%; margin-top: 10px"></div>
+    <div class="main" style="height: 20px; width: 100%; margin-top: 10px"><p> &copy; 2018 St. Ann's Auto Repair Inc. | All rights reserved <br> Terms of Service | Privacy Policy | Website Designed and Maintained by DFTM Inc.</div>
 
+    
+    
+    
+    
+    
+
+<script>
+   // alert(document.getElementsByClassName('main').length);
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    var main_content = document.getElementsByClassName("main");
+        for(var x = 0; x < main_content.length; ++x)                         {main_content[x].style.marginLeft ="250px";
+        main_content[x].style.opacity= "0.1";}  
+document.getElementById("map").style.opacity ="0.5";
+document.getElementById("pic").style.opacity ="0.5";
+document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    
+}
+
+function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+        for(var x = 0; x < document.getElementsByClassName('main').length;++x)
+            {document.getElementsByClassName("main")[x].style.marginLeft= "0";
+             document.getElementsByClassName("main")[x].style.opacity= ".8";
+            }
+document.getElementById("map").style.opacity ="1";
+document.getElementById("pic").style.opacity ="0.8";
+//document.body.style.backgroundColor = "white";
+    }
+</script>
+     
 </body>
-</html>
+</html> 
